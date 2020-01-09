@@ -10,18 +10,21 @@ def convert_to_letter(num) :
 	num = int(num) % 26
 	return chr(num + 97) #chr for letter from ascii value
 
-val = input("Enter value to be converted ('quit' to quit) : ")
 
-while (val != 'quit') :
-
-	if (val.isalpha()) :
-		print(convert_to_num(val.lower()))
-	elif (val.isnumeric()) :
-		print(convert_to_letter(val))
-	else :
-		print('Enter valid value')
+if __name__ == "__main__":
 
 	val = input("Enter value to be converted ('quit' to quit) : ")
+
+	while (val != 'quit') :
+
+		if (val.isalpha()) :
+			print(convert_to_num(val.lower()))
+		elif (val.isnumeric()) :
+			print(convert_to_letter(val))
+		else :
+			print('Enter valid value')
+
+		val = input("Enter value to be converted ('quit' to quit) : ")
 
 
 
