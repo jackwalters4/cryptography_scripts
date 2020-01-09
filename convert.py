@@ -16,7 +16,7 @@ while (val != 'quit') :
 
 	if (val.isalpha()) :
 		print(convert_to_num(val.lower()))
-	elif(val.isnumeric()) :
+	elif (val.isnumeric()) :
 		print(convert_to_letter(val))
 	else :
 		print('Enter valid value')
